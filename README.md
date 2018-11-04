@@ -3,7 +3,7 @@ A guide to building a hyper-converged private cloud on commodity hardware
 
 ## Index
 
-* (What is hyper-convergence?)[#hyper-convergent-infrastructure]
+* [What is hyper-convergence?](#hyper-convergent-infrastructure)
 * Hypervisor: Proxmox
 * Storage: Ceph
 * Networking: Linux Bridge
