@@ -1,6 +1,6 @@
 # Hyper-converged Private Cloud Guide
 
-A guide to building a hyper-converged private cloud on commodity hardware
+The goal of this repository is to provide a comprehensive and beginner-friendly guide to building a hyper-converged private cloud on commodity hardware.
 
 ## Index
 
@@ -9,19 +9,29 @@ A guide to building a hyper-converged private cloud on commodity hardware
 * Storage: Ceph
 * Networking: Linux Bridge
 
-## Hyper-convergent infrastructure
+## What is hyper-convergence?
 
-TLDR; All datacenter components are in one chassis.
+### TLDR
+
+![sample architecture](images/hci-arch.jpg)
+
+Hyper-convergent infrastructure means that all (most) datacenter components are in one standardised chassis. Instead of having separate storage (SAN) and compute clusters (virtualisation) clusters/node, every node serves a portion of both services.
 
 ### Advantages
 
-* Lower complexity
+* Lower complexity (one type of device/node)
+* Higher resource utilisation (can utilise excess CPU previous locked away in storage nodes)
 * Lower footprint (especially for smaller-scale deployments)
 * Easy to gradually scale horizontally over time by adding new nodes
 
-### This takes the form of
+This takes the form of: 
 
-* Software defined compute (KVM / LXC)
-* Software defined storage (Ceph)
-* Software defined network (Open vSwitch / Linux Bridge)
+* Software defined compute
+* Software defined storage
+* Software defined network
 
+### Open-source Technologies involved
+
+* Proxmox
+* Ceph
+* Open vSwitch
